@@ -1,27 +1,69 @@
 body{
     font-family: "Lato";
+    background: #36D1DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
 #main-container h1{
     color: white;
     background-color: steelblue;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 5%;
+    font-size: 25px;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#main-container form{
-    padding-left: 20px;
+#tasks-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 #main-container {
     padding: 0;
     width: 400px;
-    min-height: 200px;
-    margin: 50px auto;
+    margin: 80px auto;
     border: 1px solid lightgray;
-    box-shadow: 1px 1px 1px black;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
 .completed-li{
     text-decoration: line-through;
     color: gray;
+}
+
+#tasks-list span{
+    color: red;
+}
+
+#tasks-list li{
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#tasks-list li:nth-child(2n){
+    background: white;
+}
+
+#new-task-input input:focus{
+    border: 3px solid steelblue;
+    outline: none;
+}
+
+#new-task-input{
+    color: steelblue;
+    box-sizing:border-box;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    padding: 13px 13px 13px 20px;
+    margin: 0;
 }
