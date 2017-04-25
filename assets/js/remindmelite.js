@@ -17,7 +17,7 @@ $('#new-task-input').keydown(function(event){
             var todoText = $(this).val();
             $(this).val("");
 
-            $('#tasks-list').append('<li><span class="remove-button">X</span> ' + todoText + '</li>');
+            $('#tasks-list').append('<li><span class="remove-button"><i class="fa fa-trash"></i></span> ' + todoText + '</li>');
         }
     }
 })
