@@ -38,12 +38,36 @@ body{
 }
 
 #tasks-list span{
-    color: red;
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    width: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#tasks-list li:hover span{
+    width: 40px;
+    opacity: 1.0;
+    transition: 0.3s;
+}
+
+#tasks-list span:hover{
+    background: lightcoral;
+    transition: 0.3s;
 }
 
 #tasks-list li{
     height: 40px;
     line-height: 40px;
+}
+
+h1 .fa{
+    float: right;
+    padding-right: 10px;
 }
 
 
@@ -54,6 +78,12 @@ body{
 #new-task-input input:focus{
     border: 3px solid steelblue;
     outline: none;
+}
+
+li a{
+    color: inherit;
+    text-transform: inherit;
+    text-decoration: inherit;
 }
 
 #new-task-input{
