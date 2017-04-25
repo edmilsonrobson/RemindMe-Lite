@@ -86,6 +86,16 @@ li a{
     text-decoration: inherit;
 }
 
+footer p{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+footer a{
+    color: inherit;
+}
+
 #new-task-input{
     color: steelblue;
     box-sizing:border-box;
