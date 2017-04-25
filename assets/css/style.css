@@ -1,3 +1,6 @@
+body{
+    font-family: "Lato";
+}
 #main-container h1{
     color: white;
     background-color: steelblue;
@@ -12,12 +15,13 @@
 #main-container {
     padding: 0;
     width: 400px;
+    min-height: 200px;
     margin: 50px auto;
     border: 1px solid lightgray;
     box-shadow: 1px 1px 1px black;
 }
 
-#main-container completed-li{
+.completed-li{
     text-decoration: line-through;
     color: gray;
 }
